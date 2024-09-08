@@ -5,7 +5,10 @@
 ## ViewComponents
 ## LogIn -LogOut
 ## Authorize - Authentication
-## ORM teknolojisi olarak EntityFramework  Code First - CRUD İşlemleri
+## ORM teknolojisi olarak EntityFramework  Code First - CRUD İşlemleri - LinQ
 ## Validation Kontrolleri
-## Layout - @RenderBody() - PagedList(Sayfalama) - Search(Arama) - Alert - Http Functions 
+## Layout - @RenderBody() 
+## PagedList(Sayfalama) 
+## Search(Arama) 
+## Alert - Http Functions 
 ## DropDownList - ViewBag - Dosya Ekleme
