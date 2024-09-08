@@ -20,7 +20,7 @@
 ![Ekran Görüntüsü (401)](https://github.com/user-attachments/assets/5088d7b7-d6ee-40d4-aaca-d1da1f5851f8)
 ![Ekran Görüntüsü (402)](https://github.com/user-attachments/assets/6c529ae3-7b92-45a4-bf00-de223921ff9e)
 ### ✅Kategorilere ait ürünlerin listelenmesi
-### Layout sayfasında ViewComponent ler kullandım. Dinamik olması gereken yerleri yani Kategori listesini ve Kategoriye ait ürünlerinin listelenme işlemlerini ViewComponentler ile sağladım. Bunuda  ViewComponents dizini altında CRUD işlemlerini yaptığım bir Class oluşturup aynı isimde Shared/Components/Classİsmi dizini altında "Default.cshtml" view sayfasını Layout sayfasında Asenkron olarak çalıştırılan bir partical view olarak kullandım. 
+### ✅Layout sayfasında ViewComponent ler kullandım. Dinamik olması gereken yerleri yani Kategori listesini ve Kategoriye ait ürünlerinin listelenme işlemlerini ViewComponentler ile sağladım. Bunuda  ViewComponents dizini altında CRUD işlemlerini yaptığım bir Class oluşturup aynı isimde Shared/Components/Classİsmi dizini altında "Default.cshtml" view sayfasını Layout sayfasında Asenkron olarak çalıştırılan bir partical view olarak kullandım. 
 ![Ekran Görüntüsü (403)](https://github.com/user-attachments/assets/b5694858-2c79-4c4e-8a31-24e3da608396)
 ![Ekran Görüntüsü (405)](https://github.com/user-attachments/assets/b820ce84-48c8-487d-a9d5-42881be77909)
 ![Ekran Görüntüsü (421)](https://github.com/user-attachments/assets/d0fd760f-5dfc-419f-87bd-08ac2c1bb293)
