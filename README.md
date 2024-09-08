@@ -26,12 +26,23 @@
 ![Ekran Görüntüsü (406)](https://github.com/user-attachments/assets/e3b7a7bd-80ae-4fdd-88c8-b93f86de04aa)
 ## 📌Footer
 ![Ekran Görüntüsü (407)](https://github.com/user-attachments/assets/b240d691-90ec-4c55-87ae-5f1d7b3ce91f)
-
-
-
-
-
-
 # 📌Login
-### Kimliği doğrulanmış kullanıcının bilgileri çerezlere kaydedilerek, sonrasında kimlik doğrulanma gerektiren sayfalarda gezinirken tarayıcının çerezinde bilgiler kullanılarak kullanıcının sayfalar arasında tekrar tekrar kimlk doğrulama  yapmadan gezinmesini sağlar.
+### ✅Kimliği doğrulanmış kullanıcının bilgileri çerezlere kaydedilerek, sonrasında kimlik doğrulanma gerektiren sayfalarda gezinirken tarayıcının çerezinde bilgiler kullanılarak kullanıcının sayfalar arasında tekrar tekrar kimlk doğrulama  yapmadan gezinmesini sağlar.
 ![Ekran Görüntüsü (400)](https://github.com/user-attachments/assets/51c0d24b-5bb5-4f02-80dd-0fb2e00efe50)
+# 📌Admin 
+## 📌Foods 
+### ✅PagedList - Search
+![Ekran Görüntüsü (409)](https://github.com/user-attachments/assets/13f99c1e-50f6-40b9-b37a-323f166d3018)
+### ✅Silme için onay alma
+![Ekran Görüntüsü (410)](https://github.com/user-attachments/assets/f8fc5fc6-f348-46c7-adb3-e5e1db264a2b)
+### ✅Güncellenecek veriyi çekme ve Validation Kontrolleri
+![Ekran Görüntüsü (412)](https://github.com/user-attachments/assets/40138d1f-d39d-4756-b6fa-7efda8ba3c9b)
+### ✅Ürün eklerken resim ekleme bölümü
+![Ekran Görüntüsü (415)](https://github.com/user-attachments/assets/40a6c72c-dbe8-422a-adce-334a47ba7147)
+### ✅Pasta Grafiği
+![Ekran Görüntüsü (418)](https://github.com/user-attachments/assets/ff6a724e-25ba-4334-9d71-44ddafad65c3)
+### ✅Sütun Grafiği
+![Ekran Görüntüsü (419)](https://github.com/user-attachments/assets/2410c67a-da96-4f1f-9338-f8d7a6cbfd67)
+### ✅İstatistikler 
+![Ekran Görüntüsü (420)](https://github.com/user-attachments/assets/b54ecd09-596d-4838-bc2f-40a702913926)
+### ✅Ayrıca LogOut ile çıkış yapılıp çerezler temizlenir.
