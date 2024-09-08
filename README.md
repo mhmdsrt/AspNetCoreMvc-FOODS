@@ -12,6 +12,7 @@
 ## 💎Search(Arama) 
 ## 💎Alert - Http Functions 
 ## 💎DropDownList - ViewBag - Dosya Ekleme(IFormFile)
+## 💎İlişkili tablolardan veri silme işlemi için Aktif-Pasif yöntemi
 
 # 📌Store 
 ## 📌Header
