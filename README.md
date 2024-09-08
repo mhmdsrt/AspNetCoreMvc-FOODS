@@ -13,5 +13,5 @@
 ## 💎Alert - Http Functions 
 ## 💎DropDownList - ViewBag - Dosya Ekleme
 # 📌Login
-### Kimliği doğrulanmış kullanıcının bilgileri çerezlere kaydedilerek, sonrasında kimlik doğrulanma gerektiren sayfalarda gezinirken tarayıcının çerezinde bilgiler kullanılarak kullanıcının sayfalar arasında tekrar tekrar kimlk doğrulama ### yapmadan gezinmesini sağlar.
+### Kimliği doğrulanmış kullanıcının bilgileri çerezlere kaydedilerek, sonrasında kimlik doğrulanma gerektiren sayfalarda gezinirken tarayıcının çerezinde bilgiler kullanılarak kullanıcının sayfalar arasında tekrar tekrar kimlk doğrulama  yapmadan gezinmesini sağlar.
 ![Ekran Görüntüsü (400)](https://github.com/user-attachments/assets/51c0d24b-5bb5-4f02-80dd-0fb2e00efe50)
