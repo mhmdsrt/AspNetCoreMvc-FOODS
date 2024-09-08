@@ -31,7 +31,7 @@
 ![Ekran Görüntüsü (400)](https://github.com/user-attachments/assets/51c0d24b-5bb5-4f02-80dd-0fb2e00efe50)
 # 📌Admin 
 ## 📌Foods 
-### ✅PagedList - Search
+### ✅PagedList(Sayfalama) - Search(Arama)
 ![Ekran Görüntüsü (409)](https://github.com/user-attachments/assets/13f99c1e-50f6-40b9-b37a-323f166d3018)
 ### ✅Silme için onay alma
 ![Ekran Görüntüsü (410)](https://github.com/user-attachments/assets/f8fc5fc6-f348-46c7-adb3-e5e1db264a2b)
