@@ -1,0 +1,198 @@
+﻿
+@{
+    ViewData["Title"] = "Statistics";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Custom Theme files -->
+    <link href="~/CoreTemplateWeb2-master/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Custom Theme files -->
+    <script src="~/weCoreTemplateWeb2-masterb2/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="~/CoreTemplateWeb2-master/css/font-awesome.css">
+    <!-- Custom Theme files -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Metro Panel Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--webfont-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <link href="~/CoreTemplateWeb2-master/css/jqvmap.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+    <script src="~/CoreTemplateWeb2-master/js/easyResponsiveTabs.js" type="text/javascript"></script>
+
+    <script src="~/CoreTemplateWeb2-master/js/main.js"></script> <!-- Resource jQuery -->
+    <!-- chart -->
+    <script src="~/CoreTemplateWeb2-master/js/Chart1.js"></script>
+    <!-- //chart -->
+</head>
+<body>
+    <div class="total-content">
+        <div class="list_of_members">
+            <div class="sales" style="background-color:#fff200">
+                <div class="icon-text">
+                    <h3>@ViewBag.v1</h3>
+                    <p>Toplam Yiyecek Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="new-users" style="background-color:#e056fd">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v2</h3>
+                    <p>Toplam Kategori Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="orders" style="background-color:#4bcffa">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v3:@ViewBag.v5₺</h3>
+                    <p>En Pahallı Yiyecek</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="visitors" style="background-color:#b2bec3">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v4:@ViewBag.v6₺</h3>
+                    <p>En Ucuz Yiyecek</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="total-content">
+        <div class="list_of_members">
+            <div class="sales" style="background-color:#32ff7e">
+                <div class="icon-text">
+                    <h3>@ViewBag.v7</h3>
+                    <p>Toplam Stok</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="new-users" style="background-color:#FC427B">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v8</h3>
+                    <p>En Yüksek Stok Miktarı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="orders" style="background-color:#34e7e4">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v9</h3>
+                    <p>En Düşük Stok Miktarı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="visitors" style="background-color:#ff3f34">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v10</h3>
+                    <p>Ortalama Stok Miktarı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+
+    <div class="clearfix"></div>
+
+    <div class="total-content">
+        <div class="list_of_members">
+            <div class="sales" style="background-color:#5f27cd">
+                <div class="icon-text">
+                    <h3>@ViewBag.v11</h3>
+                    <p>Sebze Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="new-users" style="background-color:#BDC581">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v12</h3>
+                    <p>Meyve Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="orders" style="background-color:#f368e0">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v13</h3>
+                    <p>Bakliyat Sayısı</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="visitors" style="background-color:#FFC312">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v14:@ViewBag.v15₺</h3>
+                    <p>En Pahallı Sebze</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="total-content">
+        <div class="list_of_members">
+            <div class="sales" style="background-color:#f5cd79">
+                <div class="icon-text">
+                    <h3>@ViewBag.v16:@ViewBag.v17₺</h3>
+                    <p>En Pahallı Meyve</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="new-users" style="background-color:#55efc4">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v18:@ViewBag.v19₺</h3>
+                    <p>En Pahallı Bakliyat</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="orders" style="background-color:#3dc1d3">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v20:@ViewBag.v21</h3>
+                    <p>En Ucuz Sebze</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="visitors" style="background-color:#05c46b">
+
+                <div class="icon-text">
+                    <h3>@ViewBag.v22:@ViewBag.v23</h3>
+                    <p>En Ucuz Meyve</p>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>

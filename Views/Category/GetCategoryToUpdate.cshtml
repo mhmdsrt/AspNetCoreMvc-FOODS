@@ -1,0 +1,29 @@
+﻿@model AspNetCoreFood.Models.Category
+
+@{
+    ViewData["Title"] = "UpdateCategory";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("UpdateCategory", "Category", FormMethod.Post))
+{
+    <div>
+        <label>Category ID</label>
+        @Html.TextBoxFor(a => a.CategoryID, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div style="margin-top:15px">
+        <label>Category Name</label>
+        @Html.TextBoxFor(a => a.CategoryName, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+    </div>
+
+    <div style="margin-top:15px">
+        <label>Category Description</label>
+        @Html.TextBoxFor(a => a.CategoryDescription, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+    </div>
+
+    <div style="margin-top:15px">
+        <button class="btn btn-warning">Update</button>
+    </div>
+}
+

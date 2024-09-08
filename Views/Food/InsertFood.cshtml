@@ -1,0 +1,47 @@
+﻿@model AspNetCoreFood.Models.InsertWithImageForFood
+
+@{
+    ViewData["Title"] = "InsertFood";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<form action="InsertFood" asp-controller="Food" class="form-group" method="post" enctype="multipart/form-data">
+    @*  enctype="multipart/form-data -> bu ifade formda dosya yükleme işlemi yapılırken zorunlundur.
+        Formdaki FoodNAME, FoodPrice gibi alanlar text olarak ama FoodImageURL kısmı dosya olarak gönderildiği için bu alanları ayrı ayrı güvenli
+        ve doğru bir şekilde gönderebilmek için  enctype="multipart/form-data" ifadesini kullanmak zorundayız.
+    *@
+    <div>
+        <label><strong>Category</strong></label>
+        @Html.DropDownListFor(m => m.CategoryID, (List<SelectListItem>)ViewBag.selectListCategory, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label><strong>Food Name</strong></label>
+        @Html.TextBoxFor(m => m.FoodName, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label><strong>Food Description</strong></label>
+        @Html.TextBoxFor(m => m.FoodDescription, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label><strong>Food Price</strong></label>
+        @Html.TextBoxFor(m => m.FoodPrice, new { @class = "form-control", @required = "", @max = 3000, min = 1, @type = "number" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label><strong>Food ImgURL</strong></label>
+        <input type="file" name="FoodImageURL" />
+    </div>
+
+    <div style="margin-top:15px;">
+        <label><strong>Food Stock</strong></label>
+        @Html.TextBoxFor(m => m.FoodStock, new { @class = "form-control", @required = "", @max = 3000, min = 1, @type = "number" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <button class="btn btn-success">Insert Food</button>
+    </div>
+</form>
+

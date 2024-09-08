@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AspNetCoreFood.Models.Food>
+
+@*
+    @{} -> html tarafında bir çıktı üretmez genelde birden çok satırlık işlem yapıcaksak kullanırız.
+    @() -> genelde tek satırlık işlem yapıcaksak ve html tarafında çıktı göstereceksek kullanıyoruz.
+*@
+
+
+<div class="agile_top_brands_grids">
+    @foreach (var food in Model)
+    {
+
+        <div class="col-md-3 top_brand_left" style="margin-bottom:50px;">
+            <div class="hover14 column">
+                <div class="agile_top_brand_left_grid">
+                    <div class="agile_top_brand_left_grid1">
+                        <figure>
+                            <div class="snipcart-item block">
+                                <div class="snipcart-thumb">
+                                    <a href="single.html"><img style="height:200px;width:200px;" title=" " alt=" " src="@food.FoodImageURL" /></a>
+                                    <p style="font-family:Arial, Helvetica, sans-serif;font-size:x-large">@food.FoodName</p>
+                                    <h4 style="color:chocolate;font-size:large">@(food.FoodPrice - (food.FoodPrice * 15 / 100))₺<span>@(food.FoodPrice)₺</span></h4>
+                                    <h6 style="margin-top:10px;font-family:Broadway">Stok:@food.FoodStock</h6>
+                                </div>
+                                <div class="snipcart-details top_brand_home_details">
+                                    <form action="checkout.html" method="post">
+                                        <fieldset>
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="business" value=" " />
+                                            <input type="hidden" name="item_name" value="@food.FoodName" />
+                                            <input type="hidden" name="amount" value="@(food.FoodPrice - (food.FoodPrice * 15 / 100))₺" />
+                                            <input type="hidden" name="discount_amount" value="0.00" />
+                                            <input type="hidden" name="currency_code" value="USD" />
+                                            <input type="hidden" name="return" value=" " />
+                                            <input type="hidden" name="cancel_return" value=" " />
+                                            <input type="submit" name="submit" value="Sepete Ekle" class="button" />
+                                        </fieldset>
+
+                                    </form>
+
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    <div class="clearfix"> </div>
+</div>

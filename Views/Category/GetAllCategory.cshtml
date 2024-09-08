@@ -1,0 +1,62 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+
+@model IPagedList<AspNetCoreFood.Models.Category>
+
+@{
+    ViewData["Title"] = "GetAllCategory";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@using (Html.BeginForm("GetAllCategory", "Category", FormMethod.Post))
+{
+    <label>Kategori Ara: </label>
+    <input type="text" name="searchWord" placeholder="Search.." />
+    <button>Ara</button>
+    
+}
+
+<h1 style="font-family:Bahnschrift">Kategoriler</h1>
+<table class="table table-bordered" style="margin-top:10px;">
+    <tr>
+        <th>CategoryID</th>
+        <th>CategoryName</th>
+        <th>CategoryDescription</th>
+    </tr>
+    @foreach (var c in Model)
+    {
+        if (c.Status == true) // Aktif olan kategorilere sahip güya silinmemiş kategorileri getiriyoruz.
+        {
+            <tr>
+                <td>@c.CategoryID</td>
+                <td>@c.CategoryName</td>
+                <td>@c.CategoryDescription</td>
+                <td>
+
+                    @Html.ActionLink(
+                             "Delete",
+                             "DeleteCategory",
+                             "Category",
+                             new { id = @c.CategoryID },
+                             new
+                             {
+                                 onclick = "return confirm('Kategoriyi gerçekten silmek istiyor musunuz?');",
+                                 @class = "btn btn-light",
+                                 @style = "background-color:crimson;color:white"
+                             }
+                             )
+                <td><a href="/Category/GetCategoryToUpdate/@c.CategoryID" class="btn btn-light" style="background-color:darkturquoise;color:white">Update</a></td>
+                <td><a href="#" class="btn btn-light" style="background-color:lightgreen;color:white">Detail</a></td>
+
+                </td>
+            </tr>
+        }
+    }
+</table>
+
+<div>
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("GetAllCategory", new { page }))
+</div>
+
+<div>
+    <a href="/Category/InsertCategory" class="btn btn-primary">Go To Insert</a>
+</div>

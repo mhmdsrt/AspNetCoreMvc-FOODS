@@ -1,0 +1,49 @@
+﻿@model AspNetCoreFood.Models.Food
+
+@{
+    ViewData["Title"] = "GetFoodToUpdate";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("UpdateFood", "Food", FormMethod.Post))
+{
+    <div>
+        <label>Category</label>
+        @Html.DropDownListFor(m => m.CategoryID, (List<SelectListItem>)ViewBag.selectListCategory, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label>Food ID</label>
+        @Html.TextBoxFor(m => m.FoodID, new { @class = "form-control", @readonly = "readonly" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label>Food Name</label>
+        @Html.TextBoxFor(m => m.FoodName, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label>Food Description</label>
+        @Html.TextBoxFor(m => m.FoodDescription, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label>Food Price</label>
+        @Html.TextBoxFor(m => m.FoodPrice, new { @class = "form-control", @required = "", @max = 3000, min = 1, @type = "number" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label>Food ImageURL</label>
+        @Html.TextBoxFor(m => m.FoodImageURL, new { @class = "form-control" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label>Food Stock</label>
+        @Html.TextBoxFor(m => m.FoodStock, new { @class = "form-control", @required = "", @max = 3000, min = 1, @type = "number" })
+    </div>
+
+    <div style="margin-top:15px;">
+        <button class="btn btn-warning">Update</button>
+    </div>
+}
+

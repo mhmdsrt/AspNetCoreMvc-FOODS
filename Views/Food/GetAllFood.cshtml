@@ -1,0 +1,67 @@
+﻿@using X.PagedList
+@using X.PagedList.Mvc.Core
+@model IPagedList<AspNetCoreFood.Models.Food>
+
+@{
+    ViewData["Title"] = "GetAllFood";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@using (Html.BeginForm("GetAllFood", "Food", FormMethod.Post))
+{
+    <label>Ürün Ara: </label>
+    <input type="text" name="searchWord" placeholder="Search.." />
+    <button>Ara</button>
+
+}
+
+<table class="table table-bordered" style="margin-top:10px;">
+    <tr>
+        <th>CategoryName</th>
+        <th>FoodID</th>
+        <th>FoodName</th>
+        <th>FoodPrice</th>
+        <th>FoodStock</th>
+        <th>Deletes</th>
+        <th>Updates</th>
+        <th>Details</th>
+    </tr>
+    @foreach (var f in Model)
+    {
+        if (f.Category.Status == true) // Aktif olan kategorileri güya silinmemiş olan kategorideki yiyecekleri getir diyoruz.
+        {
+            <tr>
+                <td>@f.Category.CategoryName</td>
+                <td>@f.FoodID</td>
+                <td>@f.FoodName</td>
+                <td>@f.FoodPrice</td>
+                <td>@f.FoodStock</td>
+                <td>
+
+                    @Html.ActionLink(
+                             "Delete",
+                             "DeleteFood",
+                             "Food",
+                             new { id = @f.FoodID },
+                             new
+                             {
+                                 onclick = "return confirm('Yiyeceği gerçekten silmek istiyor musunuz?');",
+                                 @class = "btn btn-light",
+                                 @style = "background-color:crimson;color:white"
+                             }
+                             )
+                </td>
+                <td><a href="/Food/GetFoodToUpdate/@f.FoodID" class="btn btn-light" style="background-color:darkturquoise;color:white">Update</a></td>
+                <td><a href="#" class="btn btn-light" style="background-color:lightgreen;color:white">Detail</a></td>
+
+
+            </tr>
+        }
+    }
+</table>
+
+<div>
+    @Html.PagedListPager((IPagedList)Model, page => Url.Action("GetAllFood", new { page }))
+</div>
+<div>
+    <a href="/Food/InsertFood" class="btn btn-primary">Go To Insert</a>
+</div>

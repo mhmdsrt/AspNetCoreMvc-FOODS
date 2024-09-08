@@ -1,0 +1,26 @@
+﻿@model AspNetCoreFood.Models.Category
+
+@{
+    ViewData["Title"] = "InsertCategory";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("InsertCategory", "Category", FormMethod.Post))
+{
+
+    <div>
+        <label><strong>Category Name</strong></label>
+        @Html.TextBoxFor(x => x.CategoryName, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+    </div>
+
+    <div style="margin-top:15px;">
+        <label><strong>Category Description</strong></label>
+        @Html.TextBoxFor(x => x.CategoryDescription, new { @class = "form-control", @required = "", @maxlength = 30, minlength = 4 })
+
+    </div>
+
+    <div style="margin-top:15px;">
+        <button class="btn btn-success">Insert Category</button>
+    </div>
+}
+
