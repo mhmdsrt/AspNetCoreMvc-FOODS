@@ -32,7 +32,7 @@
 ## 📌Footer
 ![Ekran Görüntüsü (407)](https://github.com/user-attachments/assets/b240d691-90ec-4c55-87ae-5f1d7b3ce91f)
 # 📌Login
-### ✅Kimliği doğrulanmış kullanıcının bilgileri çerezlere kaydedilerek, sonrasında kimlik doğrulanma gerektiren sayfalarda gezinirken tarayıcının çerezinde bilgiler kullanılarak kullanıcının sayfalar arasında tekrar tekrar kimlk doğrulama  yapmadan gezinmesini sağlar.
+### ✅Kimliği doğrulanmış kullanıcının bilgileri tarayıcının çerezlerine kaydedilerek, sonrasında kimlik doğrulanma gerektiren sayfalarda gezinirken tarayıcının çerezinde bilgiler kullanılarak kullanıcının sayfalar arasında tekrar tekrar kimlk doğrulama  yapmadan gezinmesini sağlar.
 ![Ekran Görüntüsü (400)](https://github.com/user-attachments/assets/51c0d24b-5bb5-4f02-80dd-0fb2e00efe50)
 # 📌Admin 
 ## 📌Foods 
