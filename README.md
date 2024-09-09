@@ -7,10 +7,10 @@
 ## 💎Authorize - Authentication
 ## 💎ORM teknolojisi olarak EntityFramework  Code First - CRUD İşlemleri - LinQ
 ## 💎Validation Kontrolleri
-## 💎Layout - @RenderBody() 
+## 💎Layout - @RenderBody() - @Html.BeginForm()
 ## 💎PagedList(Sayfalama) 
 ## 💎Search(Arama) 
-## 💎Alert - Http Functions 
+## 💎Alert - @Html.ActionLink() - Http Functions 
 ## 💎DropDownList - ViewBag - Dosya Ekleme(IFormFile)
 ## 💎İlişkili tablolardan veri silme işlemi için Aktif-Pasif yöntemi
 
