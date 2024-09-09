@@ -1,4 +1,4 @@
-# AspNetCoreMvc-FOODS. Front-end tarafında W3Schools un hazır teması kullanılmıştır. Login içinde hazır tema kullanılmıştır.
+# AspNetCoreMvc-FOODS. Front-end tarafında ve Login arayüzünde W3Schools un hazır teması kullanılmıştır. 
 # ✅Projemde uyguladığım ve öğrendiğim konu başlıkları:
 ## 💎Core MVC
 ## 💎Generic Repository Desing Pattern
