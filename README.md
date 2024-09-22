@@ -51,3 +51,6 @@
 ### ✅İstatistikler 
 ![Ekran Görüntüsü (420)](https://github.com/user-attachments/assets/b54ecd09-596d-4838-bc2f-40a702913926)
 ### ✅Ayrıca LogOut ile çıkış yapılıp çerezler temizlenir.
+# DataBase
+![Ekran Görüntüsü (461)](https://github.com/user-attachments/assets/86ae31d7-b7e3-4bdf-bcd9-d0cff475fccb)
+
