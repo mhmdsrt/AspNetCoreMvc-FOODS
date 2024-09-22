@@ -5,7 +5,7 @@
 ## 💎ViewComponents
 ## 💎LogIn -LogOut
 ## 💎Authorize - Authentication
-## 💎ORM teknolojisi olarak EntityFramework  Code First - CRUD İşlemleri - LinQ
+## 💎ORM teknolojisi olarak EntityFramework Core (Code First) - CRUD İşlemleri - LinQ
 ## 💎Validation Kontrolleri
 ## 💎Layout - @RenderBody() - @Html.BeginForm()
 ## 💎PagedList(Sayfalama) 
